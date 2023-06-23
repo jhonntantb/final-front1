@@ -102,7 +102,9 @@ main .information .text-info {
     display: flex;
     background-color: var(--violeta);
     justify-content: space-evenly;
-    padding: 40px 0px;
+    flex-flow: row wrap;
+    gap: 2em;
+    padding: 40px 10px;
     color: var(--blanco);
     align-items: center;
 }
@@ -115,6 +117,9 @@ main .information .text-info {
 .question  p{
     width: 450px;
 
+}
+.question p.alternative {
+    display: none;
 }
 
 /* Estilos para las cards con texto*/
@@ -218,6 +223,8 @@ main .information .text-info {
     display: flex;
     background-color: var(--violeta);
     justify-content: space-around;
+    flex-flow: row wrap;
+    gap: 2em;
     padding: 40px 0px;
     color: var(--blanco);
     align-items: center;
@@ -306,7 +313,11 @@ footer p {
     text-align: end;
 }
 /* Clases para movile*/
-
+@media (max-width: 1350px){
+    .navarro {
+        display: none;
+    }
+}
 @media (max-width: 1000px) {
     main {
         display: flex;
@@ -321,8 +332,11 @@ footer p {
     main .information {
         width: 100%;
     }
+    .sanyo {
+        display: none;
+    }
 }
-@media (max-width: 730px){
+@media (max-width: 750px){
     .header nav, .header button{
         display: none;
     }
@@ -331,5 +345,26 @@ footer p {
         rotate: calc(90deg);
         font-size: 32px;
         font-weight: 900;
+    }
+    .learn {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .question {
+        background-color: var(--celeste_brillante);
+    }
+    .question p.principal {
+        display: none;
+    }
+
+    .question p.alternative {
+        display: block;
+    }
+    
+    .learn button {
+        background-color: #232C50;
+        color: white;
     }
 }
