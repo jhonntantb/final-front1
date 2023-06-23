@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+/* Estilos generales*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+/* variables y colores que vamos usar*/
+:root {
+    --violeta: #8B48BF;
+    --celeste_brillante: #3CDDF3;
+    --azul_grisaceo_oscuro: #232851;
+    --blanco: #ffffff;
+    --gris_claro: rgb (249, 249, 249)
+    --weight1: 400;
+    --weight2: 500;
+    --weight3: 700;
+
+
+}
+
+/* Estilos del body paraque no se deforme*/
+body {
+    max-width: 1440px;
+    margin: auto;
+    font-size: 16px;
+}
+
+/* Estilos del header*/
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 65px 0px;
+    align-items: center;
+    font-weight: 800;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 1em;
+}
+
+.header nav ul li a {
+    color: black;
+}
+
+.menu {
+    display: none;
+}
+
+/* Estilos del main*/
+main {
+    display: flex;
+    max-width: 1090px;
+    margin: 68px auto;
+}
+main .img {
+    width: 50%;
+}
+
+main .information {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+main .information .text-info {
+    width: 470px;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+}
+
+.text-info {
+    display: flex;
+    align-items: end;
+}
+.text-info h1, .text-info p {
+    text-align: right;
+}
+.text-info h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.btn-contact {
+    width: 134px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: var(--violeta);
+    border: none;
+    color: var(--blanco);
+}
+
+/* Estilos para la pregunta*/
+
+.question {
+    display: flex;
+    background-color: var(--violeta);
+    justify-content: space-evenly;
+    padding: 40px 0px;
+    color: var(--blanco);
+    align-items: center;
+}
+
+.question h2 {
+    font-size: 36px;
+    font-weight: bold;
+    width: 450px;
+}
+.question  p{
+    width: 450px;
+
+}
+
+/* Estilos para las cards con texto*/
+
+.cards {
+    display: flex;
+    background-color: #fafafa;
+    justify-content: center;
+    gap: 2em;
+    flex-flow: row wrap;
+    padding: 40px 0px;
+}
+.card {
+    width: 550px;
+ }
+
+.card h3 {
+    gap: 2em;
+}
+.card h3 button {
+    width: 70px;
+    height: 43px;
+    background-color: var(--violeta);
+    border-radius: 30px;
+    border: none;
+    color: var(--blanco);
+ }
+.card div {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+ }
+ .card div p {
+    width: 440px;
+    color:  #B3B2B7;
+ }
+
+/* Estilos para los testimonios*/
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    align-items: center;
+    padding: 100px 70px;
+
+}
+
+.testimonials h2 {
+    font-size: 40px;
+    color: #242e53;
+}
+
+.test-container {
+    display: flex;
+}
+.testimony {
+    background-color: #fafafa;
+    width: 450px;
+    padding: 70px 20px 20px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.testimony img {
+    width: 85px;
+    position: absolute;
+    left:  40%;
+    top: -43px;
+}
+
+.test-inf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+}
+
+.test-inf h4 {
+    color: #3F4868;
+    font-weight: bold;
+}
+
+.test-inf p {
+    color: #B9B9C1;
+}
+
+.testimonials button {
+    width: 135px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: var(--violeta);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/*Estilos de conocenos*/
+
+.learn {
+    display: flex;
+    background-color: var(--violeta);
+    justify-content: space-around;
+    padding: 40px 0px;
+    color: var(--blanco);
+    align-items: center;
+}
+
+.learn h2 {
+    font-size: 36px;
+    font-weight: bold;
+    width: 450px;
+}
+
+.learn button {
+    width: 134px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+}
+
+
+/* Estilos para el footer*/
+
+footer {
+    background-color: #1E1E26;
+    padding: 50px 160px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer img {
+    color: white;
+}
+
+.logo-networks {
+    display: flex;
+    flex-direction: column;
+    height: 132px;
+    justify-content: space-between;
+}
+.logo-networks img.logo-white {
+    width: 110px;
+}
+.logo-networks ul {
+    display: flex;
+    gap: 1em;
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: white;
+}
+
+.links ul li a {
+    color: white;
+}
+
+.form input{
+    width: 201px;
+    height: 45px;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.form button {
+    width: 63px;
+    height: 45px;
+    background-color: var(--violeta);
+    border-radius: 50px;
+    border: none;
+    color: white;
+}
+
+footer p {
+    width: 100%;
+    color: white;
+    padding: 0px 50px;
+    text-align: end;
+}
+/* Clases para movile*/
+
+@media (max-width: 1000px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 400px;
+        padding: 68px 0px;
+    }
+    main img {
+        width: 100%px;
+    }
+    main .information {
+        width: 100%;
+    }
+}
+@media (max-width: 730px){
+    .header nav, .header button{
+        display: none;
+    }
+    .menu {
+        display: block;
+        rotate: calc(90deg);
+        font-size: 32px;
+        font-weight: 900;
+    }
+}
