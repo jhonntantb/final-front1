@@ -135,11 +135,15 @@ main .information .text-info {
 .card {
     width: 550px;
  }
-
-.card h3 {
+.card-title{
+    display: flex;
+    align-items: center;
     gap: 2em;
+    color: #323851;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
-.card h3 button {
+.card-title button {
     width: 70px;
     height: 43px;
     background-color: var(--violeta);
@@ -147,12 +151,12 @@ main .information .text-info {
     border: none;
     color: var(--blanco);
  }
-.card div {
+.card div.text-container {
     width: 100%;
     display: flex;
     justify-content: end;
  }
- .card div p {
+ .card div.text-container p {
     width: 440px;
     color:  #B3B2B7;
  }
@@ -249,11 +253,14 @@ main .information .text-info {
 
 footer {
     background-color: #1E1E26;
-    padding: 50px 160px;
+    padding: 50px 20px;
+    gap: 2em;
 }
 .footer-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 2em;
+    flex-flow: row wrap-reverse;
 }
 
 footer img {
@@ -296,6 +303,9 @@ footer img {
     border-radius: 50px;
     padding: 20px;
 }
+form {
+    width: 100%;
+}
 
 .form button {
     width: 63px;
@@ -309,10 +319,11 @@ footer img {
 footer p {
     width: 100%;
     color: white;
-    padding: 0px 50px;
+    padding: 10px 50px;
     text-align: end;
 }
-/* Clases para movile*/
+
+/* Estilos para movile*/
 @media (max-width: 1350px){
     .navarro {
         display: none;
@@ -332,6 +343,14 @@ footer p {
     main .information {
         width: 100%;
     }
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .card-title {
+        background-color: #a589bb;
+    }
     .sanyo {
         display: none;
     }
@@ -347,6 +366,19 @@ footer p {
         font-weight: 900;
     }
     .learn {
+        text-align: center;
+    }
+    .logo-networks{
+        align-items: center;
+    }
+    .logo-networks ul {
+        width: 100%;
+        display: flex;
+        gap: 5em;
+        justify-content: space-between;
+    }
+    footer p {
+        margin-top: 20px;
         text-align: center;
     }
 }
