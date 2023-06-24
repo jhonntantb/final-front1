@@ -396,7 +396,7 @@ footer p {
     }
     
     .learn button {
-        background-color: #232C50;
+        background-color: var(--azul_grisaceo_oscuro);
         color: white;
     }
 }
